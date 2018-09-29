@@ -18,11 +18,6 @@ module.exports = {
         use: ['babel-loader'],
       },
       {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: ['babel-loader', 'eslint-loader'],
-      },
-      {
         test: /\.css$/,
         exclude: /node_modules/,
         use: [
@@ -43,10 +38,6 @@ module.exports = {
       template: './src/index.html',
     }),
     new webpack.HotModuleReplacementPlugin(),
-    new UglifyJsPlugin({
-      test: /\.js(\?.*)?$/i,
-      exclude: /\/node_modules/,
-    }),
   ],
   devServer: {
     contentBase: './dist',
@@ -54,7 +45,10 @@ module.exports = {
   },
   optimization: {
     minimizer: [
-      new UglifyJsPlugin(),
+      new UglifyJsPlugin({
+        test: /\.js(\?.*)?$/i,
+        exclude: /\/node_modules/,
+      }),
       new OptimizeCssAssetsPlugin({
         cssProcessorOptions: {
           zindex: false,
