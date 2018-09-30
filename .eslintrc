@@ -23,6 +23,7 @@
       "google"
     ],
     "rules": {
+      "react/display-name": [<enabled>, { "ignoreTranspilerName": false }],
       "react/jsx-filename-extension": 0,
       "react/jsx-uses-vars": [
         2

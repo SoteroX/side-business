@@ -1,1 +1,10 @@
+@import './style/base';
 @import "~bootstrap/scss/bootstrap";
+// Navbar Styles
+@import './style/navbar/navbar';
+// Homepage Styles
+@import './style/homepage/header/header';
+@import './style/homepage/service/service';
+@import './style/homepage/contact/contact';
+@import './style/homepage/footer/footer';
+@import './style/homepage/feature/feature';
