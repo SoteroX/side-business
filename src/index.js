@@ -12,6 +12,7 @@ import App from './components/App';
 import 'bootstrap';
 import './index.scss';
 import './main.css';
+import './assets/css/material-kit.css';
 
 
 addLocaleData(en);

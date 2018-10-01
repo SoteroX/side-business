@@ -3,10 +3,11 @@ import {connect} from 'react-redux';
 // import {FormattedMessage} from 'react-intl';
 import Header from './header/Header';
 import Navbar from '../common/navbar/Navbar';
-import Service from './service/Service';
+import Team from './team/Team';
 import Contact from './contact/Contact';
 import Footer from './footer/Footer';
 import Feature from './feature/Feature';
+import Subcribe from './subscribe/Subscribe';
 
 class HomePage extends Component {
   render() {
@@ -15,8 +16,9 @@ class HomePage extends Component {
         <Navbar />
         <Header />
         <Feature />
-        <Service />
+        <Team />
         <Contact />
+        <Subcribe />
         <Footer />
       </div>
     );
