@@ -7,6 +7,7 @@ import messages from '../messages';
 // Custom Components
 import AboutPage from './AboutPage';
 import HomePage from './homepage/HomePage';
+import Navbar from './common/navbar/Navbar';
 // import Navigation from './Navigation';
 
 
@@ -18,6 +19,7 @@ class App extends Component {
         <BrowserRouter>
           <div>
             {/* <Navigation/> */}
+            <Navbar />
             <Route exact path='/' component={HomePage}/>
             <Route exact path='/about' component={AboutPage}/>
           </div>
