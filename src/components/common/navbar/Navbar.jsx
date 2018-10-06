@@ -15,7 +15,7 @@ export default () => {
               <Link className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/feature">Features</Link>
+              <Link className="nav-link" to="/feature">Features <span className="sr-only">(current)</span></Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/service">Service</Link>
